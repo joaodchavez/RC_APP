@@ -7,86 +7,131 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02FE5FEDCD32C34A1343D5FF302468E1 /* Pods-RCApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AFE3C39AA582156F4435441B07E35F /* Pods-RCApp-dummy.m */; };
-		15A80258E9DE1F95584714DE77BC69C0 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19CC5E367DF0B8BCFB0B0EB004126637 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		6FDC67CFD0C34453B65175AB66950EA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		D84969347E30A0928C5E5CA025F56B89 /* Pods-RCApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3750A4476BD63D66299380971A57500C /* Pods-RCApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE22AA4B348C30D92B3D7F23BE18EE34 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */; };
-		EF9B1E608DD11562C40669C594892E92 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
+		51C83BF4B3E337DE20730DBE8D5FDC76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		67516B01E1BDC9295D80C359AAD3100D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		782C34F4A1ABCB57E54C34CE6C01F73C /* FZAccordionTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D6557D8D80FFA4BA62E220ED038A523 /* FZAccordionTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78759934F56454CD502062BB21E94AB5 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5E1A62CF4589074D0BC3682BD0FDECA /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79903C4C127BD3EA0871D93B991468E4 /* Pods-RCApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3750A4476BD63D66299380971A57500C /* Pods-RCApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B0C7E171F6BD2B1D9A4B42C0117975E /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B66C3C4FADB45E364D24D1CA638CD /* SwiftyJSON.swift */; };
+		9F5293C7D868F5344572C89DCF4F8FFD /* FZAccordionTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 06C8F84F0AB2F19671DBDE6E1D77B5F4 /* FZAccordionTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A08C764A0959DF1F66056580B430872D /* FZAccordionTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB277FAADD086ED78851745727F1644 /* FZAccordionTableView.m */; };
+		B883F55BC2082B72CD33A9646C56E894 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C4ADDBE061BAB4A90E302F059509C035 /* Pods-RCApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AFE3C39AA582156F4435441B07E35F /* Pods-RCApp-dummy.m */; };
+		C926D0670B5FA7AFF40E4444AEA38A5F /* FZAccordionTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E347BBD4C7F07032848CE6B415CEC /* FZAccordionTableView-dummy.m */; };
+		D952B1A1290A6C7A4EC93B79FB9D478C /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDD1FA6253031C7A7C9E0D81EC9601D /* SwiftyJSON-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D85D8B8783160DEBFBABF6998F567821 /* PBXContainerItemProxy */ = {
+		0ACA33E26F6C505A6E6708A61B74ADAE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3B8EC4EDDB363944A12FBF41BC62C6F5;
+			remoteGlobalIDString = FFC6095663C8C444F0093D2A2BECFA58;
+			remoteInfo = FZAccordionTableView;
+		};
+		16A3D8325D3CF72316F5B2ABA8103050 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 322845633FF3BC0AFFF142921AF1FAD3;
 			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		069EECA31D3CF3E37D2E985C1E72E6CA /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06C8F84F0AB2F19671DBDE6E1D77B5F4 /* FZAccordionTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZAccordionTableView.h; path = FZAccordionTableView/FZAccordionTableView.h; sourceTree = "<group>"; };
+		0B1489069BF07AA7CDC5A9E1F47BABF3 /* FZAccordionTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FZAccordionTableView.framework; path = FZAccordionTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		227B343ED96A2C3AD8336FA69143F37A /* Pods-RCApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RCApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		2A12072763109C365C4E597C89AF9BCF /* FZAccordionTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FZAccordionTableView.xcconfig; sourceTree = "<group>"; };
+		348527E3B837B56D16288F2CD1B1DFEF /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		367E51BC921FB29B0E2BCEE0C1DE054B /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		36AFE3C39AA582156F4435441B07E35F /* Pods-RCApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RCApp-dummy.m"; sourceTree = "<group>"; };
 		3750A4476BD63D66299380971A57500C /* Pods-RCApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RCApp-umbrella.h"; sourceTree = "<group>"; };
+		3D8A215DF85157555D4E8D3BF8FAFF61 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40ACD9713DCB0650D2B2FEF60AACF94E /* Pods-RCApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RCApp.debug.xcconfig"; sourceTree = "<group>"; };
+		552E347BBD4C7F07032848CE6B415CEC /* FZAccordionTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FZAccordionTableView-dummy.m"; sourceTree = "<group>"; };
+		5E1B66C3C4FADB45E364D24D1CA638CD /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		6D6557D8D80FFA4BA62E220ED038A523 /* FZAccordionTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZAccordionTableView-umbrella.h"; sourceTree = "<group>"; };
+		6DB277FAADD086ED78851745727F1644 /* FZAccordionTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FZAccordionTableView.m; path = FZAccordionTableView/FZAccordionTableView.m; sourceTree = "<group>"; };
 		6E7B4A6CB2CB0000165B6459FC2FCC7D /* Pods-RCApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RCApp-resources.sh"; sourceTree = "<group>"; };
 		76D4AA57D8B01638655E2F3431796259 /* Pods-RCApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RCApp-frameworks.sh"; sourceTree = "<group>"; };
 		81285181FC74C18E036F593303300DF0 /* Pods-RCApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RCApp.release.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C548115B49BEEAEB528EDF8ED0CC2354 /* Pods_RCApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RCApp.framework; path = "Pods-RCApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A899094876A71F2A9B116BD8B86AEA /* FZAccordionTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZAccordionTableView-prefix.pch"; sourceTree = "<group>"; };
+		AE933FD9F7DA8FEC4AFED13868CA9B95 /* Pods_RCApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RCApp.framework; path = "Pods-RCApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C651E506110FE764EC8EE1FA8A2A8D /* FZAccordionTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FZAccordionTableView.modulemap; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		D20AAF25FCCBDE71DDCF67A3A2C32925 /* Pods-RCApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RCApp.modulemap"; sourceTree = "<group>"; };
+		D5E1A62CF4589074D0BC3682BD0FDECA /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		E1D858EECC122B3D136E4FE008D38CEA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5B71C2F8AA94F4CED75CBD26A5B5FEB /* Pods-RCApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RCApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		EAE88DAAF85F355B6C5893EF39592C7B /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		F3DEF1ABF43BE36CFB94F35710CF3C13 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCDD1FA6253031C7A7C9E0D81EC9601D /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		FF04812F7C41C23CE819689047C0F631 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5B60B1423DC81A05AC174672983255A9 /* Frameworks */ = {
+		2507453E2132597CFCF787D7DBF92FAD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19CC5E367DF0B8BCFB0B0EB004126637 /* Foundation.framework in Frameworks */,
+				B883F55BC2082B72CD33A9646C56E894 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA218ED485065CB86E113A53F55E2F28 /* Frameworks */ = {
+		CCBF6DD3B108B044B966EDE7273E7A0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FDC67CFD0C34453B65175AB66950EA9 /* Foundation.framework in Frameworks */,
+				67516B01E1BDC9295D80C359AAD3100D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE851C0CE621D1BCE3EA7B35FEDDEBA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51C83BF4B3E337DE20730DBE8D5FDC76 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		137B1A14B6B0E5CEEB38E3B780A0BF02 /* Products */ = {
+		03DCD387EF7B620C9D3EF2F388D598E1 /* FZAccordionTableView */ = {
 			isa = PBXGroup;
 			children = (
-				C548115B49BEEAEB528EDF8ED0CC2354 /* Pods_RCApp.framework */,
-				069EECA31D3CF3E37D2E985C1E72E6CA /* SwiftyJSON.framework */,
+				06C8F84F0AB2F19671DBDE6E1D77B5F4 /* FZAccordionTableView.h */,
+				6DB277FAADD086ED78851745727F1644 /* FZAccordionTableView.m */,
+				E452CB527051E3260052E49421BC39EC /* Support Files */,
 			);
-			name = Products;
+			name = FZAccordionTableView;
+			path = FZAccordionTableView;
 			sourceTree = "<group>";
 		};
-		70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */ = {
+		526E21AD8AD118D5857F7ABB94D02789 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */,
-				8EC39E1DC11846207722B71AAFE40F98 /* Support Files */,
+				F3DEF1ABF43BE36CFB94F35710CF3C13 /* Info.plist */,
+				FF04812F7C41C23CE819689047C0F631 /* SwiftyJSON.modulemap */,
+				367E51BC921FB29B0E2BCEE0C1DE054B /* SwiftyJSON.xcconfig */,
+				FCDD1FA6253031C7A7C9E0D81EC9601D /* SwiftyJSON-dummy.m */,
+				EAE88DAAF85F355B6C5893EF39592C7B /* SwiftyJSON-prefix.pch */,
+				D5E1A62CF4589074D0BC3682BD0FDECA /* SwiftyJSON-umbrella.h */,
 			);
-			name = SwiftyJSON;
-			path = SwiftyJSON;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		6A219478383DC4719B40AD88389A570E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B1489069BF07AA7CDC5A9E1F47BABF3 /* FZAccordionTableView.framework */,
+				AE933FD9F7DA8FEC4AFED13868CA9B95 /* Pods_RCApp.framework */,
+				348527E3B837B56D16288F2CD1B1DFEF /* SwiftyJSON.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -102,24 +147,20 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */,
-				137B1A14B6B0E5CEEB38E3B780A0BF02 /* Products */,
+				ACC134848472BD58282A3CE91E5F3E2C /* Pods */,
+				6A219478383DC4719B40AD88389A570E /* Products */,
 				A2437108F42A3B03EAD9A5B08018460C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8EC39E1DC11846207722B71AAFE40F98 /* Support Files */ = {
+		A0D0E92724DCF5ABBFB86464F668548F /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */,
-				D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */,
-				2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */,
-				32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */,
-				BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */,
-				05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */,
+				5E1B66C3C4FADB45E364D24D1CA638CD /* SwiftyJSON.swift */,
+				526E21AD8AD118D5857F7ABB94D02789 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
+			name = SwiftyJSON;
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		A2437108F42A3B03EAD9A5B08018460C /* Targets Support Files */ = {
@@ -130,20 +171,21 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		ACC134848472BD58282A3CE91E5F3E2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03DCD387EF7B620C9D3EF2F388D598E1 /* FZAccordionTableView */,
+				A0D0E92724DCF5ABBFB86464F668548F /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		D4689FD133AAF36F6173CBC9B0E36C1F /* Pods-RCApp */ = {
@@ -164,35 +206,77 @@
 			path = "Target Support Files/Pods-RCApp";
 			sourceTree = "<group>";
 		};
+		E452CB527051E3260052E49421BC39EC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1C651E506110FE764EC8EE1FA8A2A8D /* FZAccordionTableView.modulemap */,
+				2A12072763109C365C4E597C89AF9BCF /* FZAccordionTableView.xcconfig */,
+				552E347BBD4C7F07032848CE6B415CEC /* FZAccordionTableView-dummy.m */,
+				A4A899094876A71F2A9B116BD8B86AEA /* FZAccordionTableView-prefix.pch */,
+				6D6557D8D80FFA4BA62E220ED038A523 /* FZAccordionTableView-umbrella.h */,
+				3D8A215DF85157555D4E8D3BF8FAFF61 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FZAccordionTableView";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		755F932B39233EEC2C308E6E494ADBEB /* Headers */ = {
+		3246F32C573B9D706FFA6D5736A04704 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D84969347E30A0928C5E5CA025F56B89 /* Pods-RCApp-umbrella.h in Headers */,
+				782C34F4A1ABCB57E54C34CE6C01F73C /* FZAccordionTableView-umbrella.h in Headers */,
+				9F5293C7D868F5344572C89DCF4F8FFD /* FZAccordionTableView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7FA1CC0FF244907E2F66E4D0E04022E2 /* Headers */ = {
+		561F66214D1661959B65BE184853BF2A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15A80258E9DE1F95584714DE77BC69C0 /* SwiftyJSON-umbrella.h in Headers */,
+				79903C4C127BD3EA0871D93B991468E4 /* Pods-RCApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6C7E1AE9EDF3D29366593961EB46C82 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78759934F56454CD502062BB21E94AB5 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3B8EC4EDDB363944A12FBF41BC62C6F5 /* SwiftyJSON */ = {
+		0293D55B82F8E2E70DA5DE1767076CAA /* Pods-RCApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4196B4113AAF8608389EDAFE59120A0A /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = 9A1D99E52B687D3A3B98D285542F3B4E /* Build configuration list for PBXNativeTarget "Pods-RCApp" */;
 			buildPhases = (
-				9EA25F1CA4C4D936744C95F90379374D /* Sources */,
-				5B60B1423DC81A05AC174672983255A9 /* Frameworks */,
-				7FA1CC0FF244907E2F66E4D0E04022E2 /* Headers */,
+				CC8D83E444AD1293E463E811E5FA8AB1 /* Sources */,
+				2507453E2132597CFCF787D7DBF92FAD /* Frameworks */,
+				561F66214D1661959B65BE184853BF2A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E5083BDDD6C25165225881BFF97BBBC /* PBXTargetDependency */,
+				EFFC4777239F1B964C04D5EC1B5AD240 /* PBXTargetDependency */,
+			);
+			name = "Pods-RCApp";
+			productName = "Pods-RCApp";
+			productReference = AE933FD9F7DA8FEC4AFED13868CA9B95 /* Pods_RCApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		322845633FF3BC0AFFF142921AF1FAD3 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E583D254C87700B6EC0EB4E5969CF389 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				52EAAD43DA806C8AE6D8B5506683BF56 /* Sources */,
+				DE851C0CE621D1BCE3EA7B35FEDDEBA4 /* Frameworks */,
+				B6C7E1AE9EDF3D29366593961EB46C82 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -200,25 +284,24 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = 069EECA31D3CF3E37D2E985C1E72E6CA /* SwiftyJSON.framework */;
+			productReference = 348527E3B837B56D16288F2CD1B1DFEF /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FC9C944971C773EB30056A1AE339C708 /* Pods-RCApp */ = {
+		FFC6095663C8C444F0093D2A2BECFA58 /* FZAccordionTableView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E33CA6926FFBA1030514D89A6865FBE /* Build configuration list for PBXNativeTarget "Pods-RCApp" */;
+			buildConfigurationList = 29BF29A99AAEDEF8832BD4BD7ECBB8C0 /* Build configuration list for PBXNativeTarget "FZAccordionTableView" */;
 			buildPhases = (
-				324624F27582E199619A77E5D022BB92 /* Sources */,
-				DA218ED485065CB86E113A53F55E2F28 /* Frameworks */,
-				755F932B39233EEC2C308E6E494ADBEB /* Headers */,
+				3170CB9D0CA82DD67481C5F497E7BBED /* Sources */,
+				CCBF6DD3B108B044B966EDE7273E7A0A /* Frameworks */,
+				3246F32C573B9D706FFA6D5736A04704 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BC294FB2E4C022D1C36572D665A52B82 /* PBXTargetDependency */,
 			);
-			name = "Pods-RCApp";
-			productName = "Pods-RCApp";
-			productReference = C548115B49BEEAEB528EDF8ED0CC2354 /* Pods_RCApp.framework */;
+			name = FZAccordionTableView;
+			productName = FZAccordionTableView;
+			productReference = 0B1489069BF07AA7CDC5A9E1F47BABF3 /* FZAccordionTableView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -238,49 +321,65 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 137B1A14B6B0E5CEEB38E3B780A0BF02 /* Products */;
+			productRefGroup = 6A219478383DC4719B40AD88389A570E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FC9C944971C773EB30056A1AE339C708 /* Pods-RCApp */,
-				3B8EC4EDDB363944A12FBF41BC62C6F5 /* SwiftyJSON */,
+				FFC6095663C8C444F0093D2A2BECFA58 /* FZAccordionTableView */,
+				0293D55B82F8E2E70DA5DE1767076CAA /* Pods-RCApp */,
+				322845633FF3BC0AFFF142921AF1FAD3 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		324624F27582E199619A77E5D022BB92 /* Sources */ = {
+		3170CB9D0CA82DD67481C5F497E7BBED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02FE5FEDCD32C34A1343D5FF302468E1 /* Pods-RCApp-dummy.m in Sources */,
+				C926D0670B5FA7AFF40E4444AEA38A5F /* FZAccordionTableView-dummy.m in Sources */,
+				A08C764A0959DF1F66056580B430872D /* FZAccordionTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9EA25F1CA4C4D936744C95F90379374D /* Sources */ = {
+		52EAAD43DA806C8AE6D8B5506683BF56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE22AA4B348C30D92B3D7F23BE18EE34 /* SwiftyJSON-dummy.m in Sources */,
-				EF9B1E608DD11562C40669C594892E92 /* SwiftyJSON.swift in Sources */,
+				D952B1A1290A6C7A4EC93B79FB9D478C /* SwiftyJSON-dummy.m in Sources */,
+				8B0C7E171F6BD2B1D9A4B42C0117975E /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC8D83E444AD1293E463E811E5FA8AB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4ADDBE061BAB4A90E302F059509C035 /* Pods-RCApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BC294FB2E4C022D1C36572D665A52B82 /* PBXTargetDependency */ = {
+		1E5083BDDD6C25165225881BFF97BBBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FZAccordionTableView;
+			target = FFC6095663C8C444F0093D2A2BECFA58 /* FZAccordionTableView */;
+			targetProxy = 0ACA33E26F6C505A6E6708A61B74ADAE /* PBXContainerItemProxy */;
+		};
+		EFFC4777239F1B964C04D5EC1B5AD240 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = 3B8EC4EDDB363944A12FBF41BC62C6F5 /* SwiftyJSON */;
-			targetProxy = D85D8B8783160DEBFBABF6998F567821 /* PBXContainerItemProxy */;
+			target = 322845633FF3BC0AFFF142921AF1FAD3 /* SwiftyJSON */;
+			targetProxy = 16A3D8325D3CF72316F5B2ABA8103050 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0CA6AA0C02936E4817ED707B17F2417F /* Release */ = {
+		481B764B2AD40C37D1B635035D49BA17 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 367E51BC921FB29B0E2BCEE0C1DE054B /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -310,7 +409,7 @@
 			};
 			name = Release;
 		};
-		2341AB22E5FE61720E7F20D483A7DE87 /* Release */ = {
+		4C145107A7374FB222D847FAE8951A92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81285181FC74C18E036F593303300DF0 /* Pods-RCApp.release.xcconfig */;
 			buildSettings = {
@@ -345,7 +444,7 @@
 			};
 			name = Release;
 		};
-		74D8426CCF311102B1F27856B2F68CF4 /* Debug */ = {
+		7D07AD553D5ACC0A1079BFCEAEF8E717 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40ACD9713DCB0650D2B2FEF60AACF94E /* Pods-RCApp.debug.xcconfig */;
 			buildSettings = {
@@ -375,6 +474,70 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8EDC3BA1FEB007E194996859587438C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A12072763109C365C4E597C89AF9BCF /* FZAccordionTableView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FZAccordionTableView/FZAccordionTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FZAccordionTableView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FZAccordionTableView/FZAccordionTableView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FZAccordionTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A22C7A444FEA840E6747967C6E398613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A12072763109C365C4E597C89AF9BCF /* FZAccordionTableView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FZAccordionTableView/FZAccordionTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FZAccordionTableView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FZAccordionTableView/FZAccordionTableView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FZAccordionTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -425,6 +588,39 @@
 			};
 			name = Debug;
 		};
+		E1BAE1348E5DF4B1F41950F74A5883FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 367E51BC921FB29B0E2BCEE0C1DE054B /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -465,42 +661,18 @@
 			};
 			name = Release;
 		};
-		F2A4BA52A37B70180EFA4C0E0A3EA768 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		29BF29A99AAEDEF8832BD4BD7ECBB8C0 /* Build configuration list for PBXNativeTarget "FZAccordionTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A22C7A444FEA840E6747967C6E398613 /* Debug */,
+				8EDC3BA1FEB007E194996859587438C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -510,20 +682,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E33CA6926FFBA1030514D89A6865FBE /* Build configuration list for PBXNativeTarget "Pods-RCApp" */ = {
+		9A1D99E52B687D3A3B98D285542F3B4E /* Build configuration list for PBXNativeTarget "Pods-RCApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				74D8426CCF311102B1F27856B2F68CF4 /* Debug */,
-				2341AB22E5FE61720E7F20D483A7DE87 /* Release */,
+				7D07AD553D5ACC0A1079BFCEAEF8E717 /* Debug */,
+				4C145107A7374FB222D847FAE8951A92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4196B4113AAF8608389EDAFE59120A0A /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		E583D254C87700B6EC0EB4E5969CF389 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F2A4BA52A37B70180EFA4C0E0A3EA768 /* Debug */,
-				0CA6AA0C02936E4817ED707B17F2417F /* Release */,
+				E1BAE1348E5DF4B1F41950F74A5883FD /* Debug */,
+				481B764B2AD40C37D1B635035D49BA17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

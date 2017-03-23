@@ -11,12 +11,20 @@
 		4A0495281E6A1F3E008512F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A0495261E6A1F3E008512F1 /* Main.storyboard */; };
 		4A04952A1E6A1F3E008512F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0495291E6A1F3E008512F1 /* Assets.xcassets */; };
 		4A04952D1E6A1F3E008512F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A04952B1E6A1F3E008512F1 /* LaunchScreen.storyboard */; };
+		4A3475081E82D09E003FC58D /* TipFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3475041E82D09E003FC58D /* TipFlowLayout.swift */; };
+		4A34750B1E82D09E003FC58D /* RoundedTipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3475071E82D09E003FC58D /* RoundedTipCell.swift */; };
+		4A34750F1E82D1AB003FC58D /* TipsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34750E1E82D1AB003FC58D /* TipsCollectionViewController.swift */; };
+		4A3475111E82FCA9003FC58D /* TipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3475101E82FCA9003FC58D /* TipModel.swift */; };
+		4A3475131E831F71003FC58D /* TipDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3475121E831F71003FC58D /* TipDetailsViewController.swift */; };
+		4A3475151E833B6D003FC58D /* SourceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3475141E833B6D003FC58D /* SourceDetailsViewController.swift */; };
 		4A3769331E75029E005E6F87 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3769321E75029E005E6F87 /* MapViewController.swift */; };
 		4A3769351E7502D6005E6F87 /* WallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3769341E7502D6005E6F87 /* WallViewController.swift */; };
 		4A3769371E750340005E6F87 /* ProblemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3769361E750340005E6F87 /* ProblemViewController.swift */; };
 		4A3769391E751392005E6F87 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3769381E751392005E6F87 /* MainScreenViewController.swift */; };
 		4A37693B1E75A04B005E6F87 /* WallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A37693A1E75A04B005E6F87 /* WallModel.swift */; };
 		4A37693D1E75A05C005E6F87 /* ProblemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A37693C1E75A05C005E6F87 /* ProblemModel.swift */; };
+		4AD645881E7B162B00D54D84 /* AccordionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD645861E7B162B00D54D84 /* AccordionHeaderView.swift */; };
+		4AD645891E7B162B00D54D84 /* AccordionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AD645871E7B162B00D54D84 /* AccordionHeaderView.xib */; };
 		53A048A7251512FBA3B57E33 /* Pods_RCApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12953AB20347EFB225857B37 /* Pods_RCApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,12 +38,21 @@
 		4A0495291E6A1F3E008512F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A04952C1E6A1F3E008512F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A04952E1E6A1F3E008512F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A3475041E82D09E003FC58D /* TipFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipFlowLayout.swift; sourceTree = "<group>"; };
+		4A3475071E82D09E003FC58D /* RoundedTipCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedTipCell.swift; sourceTree = "<group>"; };
+		4A34750E1E82D1AB003FC58D /* TipsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsCollectionViewController.swift; sourceTree = "<group>"; };
+		4A3475101E82FCA9003FC58D /* TipModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipModel.swift; sourceTree = "<group>"; };
+		4A3475121E831F71003FC58D /* TipDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipDetailsViewController.swift; sourceTree = "<group>"; };
+		4A3475141E833B6D003FC58D /* SourceDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceDetailsViewController.swift; sourceTree = "<group>"; };
 		4A3769321E75029E005E6F87 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4A3769341E7502D6005E6F87 /* WallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallViewController.swift; sourceTree = "<group>"; };
 		4A3769361E750340005E6F87 /* ProblemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemViewController.swift; sourceTree = "<group>"; };
 		4A3769381E751392005E6F87 /* MainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		4A37693A1E75A04B005E6F87 /* WallModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallModel.swift; sourceTree = "<group>"; };
 		4A37693C1E75A05C005E6F87 /* ProblemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemModel.swift; sourceTree = "<group>"; };
+		4AD645851E7B0CEF00D54D84 /* RCApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RCApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		4AD645861E7B162B00D54D84 /* AccordionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccordionHeaderView.swift; sourceTree = "<group>"; };
+		4AD645871E7B162B00D54D84 /* AccordionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccordionHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +96,8 @@
 		4A0495211E6A1F3E008512F1 /* RCApp */ = {
 			isa = PBXGroup;
 			children = (
+				4AD645861E7B162B00D54D84 /* AccordionHeaderView.swift */,
+				4AD645871E7B162B00D54D84 /* AccordionHeaderView.xib */,
 				4A3769311E750245005E6F87 /* View */,
 				4A3769301E75023B005E6F87 /* ViewControllers */,
 				4A37692E1E750222005E6F87 /* Models */,
@@ -88,6 +107,7 @@
 				4A0495291E6A1F3E008512F1 /* Assets.xcassets */,
 				4A04952B1E6A1F3E008512F1 /* LaunchScreen.storyboard */,
 				4A04952E1E6A1F3E008512F1 /* Info.plist */,
+				4AD645851E7B0CEF00D54D84 /* RCApp-Bridging-Header.h */,
 			);
 			path = RCApp;
 			sourceTree = "<group>";
@@ -97,6 +117,7 @@
 			children = (
 				4A37693A1E75A04B005E6F87 /* WallModel.swift */,
 				4A37693C1E75A05C005E6F87 /* ProblemModel.swift */,
+				4A3475101E82FCA9003FC58D /* TipModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -115,6 +136,9 @@
 				4A3769321E75029E005E6F87 /* MapViewController.swift */,
 				4A3769341E7502D6005E6F87 /* WallViewController.swift */,
 				4A3769361E750340005E6F87 /* ProblemViewController.swift */,
+				4A34750E1E82D1AB003FC58D /* TipsCollectionViewController.swift */,
+				4A3475121E831F71003FC58D /* TipDetailsViewController.swift */,
+				4A3475141E833B6D003FC58D /* SourceDetailsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -122,6 +146,8 @@
 		4A3769311E750245005E6F87 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4A3475041E82D09E003FC58D /* TipFlowLayout.swift */,
+				4A3475071E82D09E003FC58D /* RoundedTipCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -199,6 +225,7 @@
 			files = (
 				4A04952D1E6A1F3E008512F1 /* LaunchScreen.storyboard in Resources */,
 				4A04952A1E6A1F3E008512F1 /* Assets.xcassets in Resources */,
+				4AD645891E7B162B00D54D84 /* AccordionHeaderView.xib in Resources */,
 				4A0495281E6A1F3E008512F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,13 +285,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A3475081E82D09E003FC58D /* TipFlowLayout.swift in Sources */,
+				4A3475111E82FCA9003FC58D /* TipModel.swift in Sources */,
 				4A3769391E751392005E6F87 /* MainScreenViewController.swift in Sources */,
+				4A34750B1E82D09E003FC58D /* RoundedTipCell.swift in Sources */,
 				4A37693D1E75A05C005E6F87 /* ProblemModel.swift in Sources */,
+				4A34750F1E82D1AB003FC58D /* TipsCollectionViewController.swift in Sources */,
+				4AD645881E7B162B00D54D84 /* AccordionHeaderView.swift in Sources */,
 				4A3769351E7502D6005E6F87 /* WallViewController.swift in Sources */,
+				4A3475151E833B6D003FC58D /* SourceDetailsViewController.swift in Sources */,
 				4A3769331E75029E005E6F87 /* MapViewController.swift in Sources */,
 				4A37693B1E75A04B005E6F87 /* WallModel.swift in Sources */,
 				4A3769371E750340005E6F87 /* ProblemViewController.swift in Sources */,
 				4A0495231E6A1F3E008512F1 /* AppDelegate.swift in Sources */,
+				4A3475131E831F71003FC58D /* TipDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +426,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fuzz.RCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./RCApp/RCApp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -405,6 +440,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fuzz.RCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./RCApp/RCApp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

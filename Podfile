@@ -6,6 +6,7 @@ target 'RCApp' do
   use_frameworks!
 
  pod 'SwiftyJSON'
+ pod 'FZAccordionTableView', '~> 0.2.3'
   # Pods for RCApp
 
 end
