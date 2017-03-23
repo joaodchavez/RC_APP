@@ -11,7 +11,6 @@ import UIKit
 class TipDetailsViewController: UIViewController {
 
     @IBOutlet weak var tipImage: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
     var tip: TipModel?
@@ -31,8 +30,8 @@ class TipDetailsViewController: UIViewController {
         super.viewWillAppear(animated)
         
         if let selectedTip = tip {
+            navigationItem.title = selectedTip.name
             tipImage.image = selectedTip.image
-            titleLabel.text = selectedTip.name
             descriptionLabel.text = selectedTip.information
         }
     }
