@@ -235,66 +235,97 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Source:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ci0-eU-cs3">
-                                <rect key="frame" x="29" y="548" width="250" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="QLS-LH-O4d">
-                                <rect key="frame" x="257" y="600" width="90" height="30"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dqL-Yu-UeK">
+                                <rect key="frame" x="17" y="487" width="343" height="114"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Source:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ci0-eU-cs3">
+                                        <rect key="frame" x="8" y="8" width="250" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="7cx-je-cw1"/>
+                                            <constraint firstAttribute="height" constant="21" id="gJf-OB-VOq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="var-gT-zRu">
+                                        <rect key="frame" x="126" y="64" width="90" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="F3p-7U-bpn"/>
+                                            <constraint firstAttribute="height" constant="30" id="evI-UN-M9r"/>
+                                        </constraints>
+                                        <state key="normal" title="Open in Browser"/>
+                                        <connections>
+                                            <action selector="OpenInBrowserWithSender:" destination="MTf-7O-7j0" eventType="touchUpInside" id="qaX-xT-ocz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1e4-UM-V24">
+                                        <rect key="frame" x="8" y="64" width="90" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="D3V-Rw-XyH"/>
+                                            <constraint firstAttribute="height" constant="30" id="NbN-Ec-fb7"/>
+                                        </constraints>
+                                        <state key="normal" title="More Info"/>
+                                        <connections>
+                                            <segue destination="aLH-Or-wDt" kind="show" identifier="showSourceSegue" id="4ex-BE-D9A"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="QLS-LH-O4d">
+                                        <rect key="frame" x="245" y="64" width="90" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="SVS-Tm-l4z"/>
+                                            <constraint firstAttribute="height" constant="30" id="saN-ao-Mno"/>
+                                        </constraints>
+                                        <state key="normal" title="Copy url to clipboard"/>
+                                        <connections>
+                                            <action selector="copyUrlToClipboard:" destination="MTf-7O-7j0" eventType="touchUpInside" id="GtA-kC-TGs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxk-zy-Tnv">
+                                        <rect key="frame" x="297" y="-1" width="46" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="D4c-R6-WuF"/>
+                                            <constraint firstAttribute="width" constant="46" id="MiG-nd-ewv"/>
+                                        </constraints>
+                                        <state key="normal" title="Open"/>
+                                        <connections>
+                                            <action selector="openMenu:" destination="MTf-7O-7j0" eventType="touchUpInside" id="7Ha-f5-JtT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.82802585659898476" green="0.76014635075488279" blue="0.48255440866722543" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="k5S-OF-6li"/>
-                                    <constraint firstAttribute="height" constant="30" id="nNm-FB-Yc0"/>
+                                    <constraint firstAttribute="trailing" secondItem="dxk-zy-Tnv" secondAttribute="trailing" id="7iM-jh-RyG"/>
+                                    <constraint firstItem="1e4-UM-V24" firstAttribute="top" secondItem="Ci0-eU-cs3" secondAttribute="bottom" constant="15" id="Cfb-Th-diX"/>
+                                    <constraint firstItem="Ci0-eU-cs3" firstAttribute="top" secondItem="dqL-Yu-UeK" secondAttribute="top" id="KqV-k6-xBU"/>
+                                    <constraint firstItem="QLS-LH-O4d" firstAttribute="top" secondItem="dxk-zy-Tnv" secondAttribute="bottom" constant="10" id="KuV-LQ-0yA"/>
+                                    <constraint firstItem="var-gT-zRu" firstAttribute="centerX" secondItem="dqL-Yu-UeK" secondAttribute="centerX" id="LGi-rz-rcC"/>
+                                    <constraint firstItem="dxk-zy-Tnv" firstAttribute="top" secondItem="dqL-Yu-UeK" secondAttribute="top" id="MhB-NU-LRD"/>
+                                    <constraint firstAttribute="width" constant="343" id="Rbb-KG-HkB"/>
+                                    <constraint firstAttribute="height" constant="30" id="l3Q-Iq-gN4"/>
+                                    <constraint firstItem="Ci0-eU-cs3" firstAttribute="leading" secondItem="dqL-Yu-UeK" secondAttribute="leading" id="paL-Qw-Uxt"/>
+                                    <constraint firstItem="1e4-UM-V24" firstAttribute="leading" secondItem="dqL-Yu-UeK" secondAttribute="leading" constant="5" id="sFG-Wl-NqX"/>
+                                    <constraint firstAttribute="trailing" secondItem="QLS-LH-O4d" secondAttribute="trailing" constant="8" id="ucc-Se-hHv"/>
+                                    <constraint firstItem="var-gT-zRu" firstAttribute="top" secondItem="Ci0-eU-cs3" secondAttribute="bottom" constant="10" id="uvn-Es-lbo"/>
                                 </constraints>
-                                <state key="normal" title="Copy url to clipboard"/>
-                                <connections>
-                                    <action selector="copyUrlToClipboard:" destination="MTf-7O-7j0" eventType="touchUpInside" id="GtA-kC-TGs"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1e4-UM-V24">
-                                <rect key="frame" x="29" y="600" width="90" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="Uxy-PM-0cl"/>
-                                    <constraint firstAttribute="height" constant="30" id="VAd-yt-TU1"/>
-                                </constraints>
-                                <state key="normal" title="More Info"/>
-                                <connections>
-                                    <segue destination="aLH-Or-wDt" kind="show" identifier="showSourceSegue" id="4ex-BE-D9A"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="var-gT-zRu">
-                                <rect key="frame" x="142" y="600" width="90" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="qsp-NR-bHy"/>
-                                    <constraint firstAttribute="height" constant="30" id="wBa-nD-uvl"/>
-                                </constraints>
-                                <state key="normal" title="Open in Browser"/>
-                                <connections>
-                                    <action selector="OpenInBrowserWithSender:" destination="MTf-7O-7j0" eventType="touchUpInside" id="qaX-xT-ocz"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XWb-hx-hJr" firstAttribute="top" secondItem="1e4-UM-V24" secondAttribute="bottom" constant="40" id="3wY-wa-SP9"/>
-                            <constraint firstItem="1e4-UM-V24" firstAttribute="top" secondItem="Ci0-eU-cs3" secondAttribute="bottom" constant="20" id="5Ap-SI-XWK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="QLS-LH-O4d" secondAttribute="trailing" constant="13" id="5ba-zx-bhQ"/>
                             <constraint firstItem="y2g-Kf-8pK" firstAttribute="top" secondItem="dF7-5H-SjM" secondAttribute="bottom" constant="20" id="6Ud-xc-NZp"/>
-                            <constraint firstItem="var-gT-zRu" firstAttribute="centerX" secondItem="bD0-gS-sHL" secondAttribute="centerX" id="A7N-Yb-ySt"/>
-                            <constraint firstItem="XWb-hx-hJr" firstAttribute="top" secondItem="var-gT-zRu" secondAttribute="bottom" constant="35" id="AtF-RZ-WJx"/>
-                            <constraint firstItem="1e4-UM-V24" firstAttribute="leading" secondItem="bD0-gS-sHL" secondAttribute="leadingMargin" constant="13" id="ELk-bW-yae"/>
+                            <constraint firstItem="dqL-Yu-UeK" firstAttribute="top" secondItem="y2g-Kf-8pK" secondAttribute="bottom" constant="10" id="Dtq-NZ-dW0"/>
+                            <constraint firstItem="dqL-Yu-UeK" firstAttribute="centerX" secondItem="bD0-gS-sHL" secondAttribute="centerX" id="N5F-3q-Owp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="y2g-Kf-8pK" secondAttribute="trailing" constant="13" id="Npr-5R-RcA"/>
                             <constraint firstItem="dF7-5H-SjM" firstAttribute="leading" secondItem="bD0-gS-sHL" secondAttribute="leadingMargin" constant="46" id="P0O-D8-mcm"/>
-                            <constraint firstItem="Ci0-eU-cs3" firstAttribute="leading" secondItem="bD0-gS-sHL" secondAttribute="leadingMargin" constant="13" id="VCQ-Ii-kpq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dF7-5H-SjM" secondAttribute="trailing" constant="47" id="gYh-Mp-r38"/>
-                            <constraint firstItem="XWb-hx-hJr" firstAttribute="top" secondItem="QLS-LH-O4d" secondAttribute="bottom" constant="35" id="kdG-Na-f1L"/>
                             <constraint firstItem="y2g-Kf-8pK" firstAttribute="leading" secondItem="bD0-gS-sHL" secondAttribute="leadingMargin" constant="13" id="yZJ-sQ-lOb"/>
                             <constraint firstItem="dF7-5H-SjM" firstAttribute="top" secondItem="bD0-gS-sHL" secondAttribute="topMargin" constant="80" id="zpR-mm-YGt"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="descriptionLabel" destination="y2g-Kf-8pK" id="zSJ-uN-Aie"/>
+                        <outlet property="menuHeightConstraint" destination="l3Q-Iq-gN4" id="qPs-c8-UhP"/>
+                        <outlet property="moreInfoButton" destination="1e4-UM-V24" id="80i-YZ-yW4"/>
                         <outlet property="tipImage" destination="dF7-5H-SjM" id="821-em-iJi"/>
                     </connections>
                 </viewController>
