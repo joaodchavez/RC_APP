@@ -36,16 +36,16 @@ class SourceDetailsViewController: UIViewController, UIWebViewDelegate {
     
     
     
-    func webViewDidStartLoad( webView: UIWebView){
+    func webViewDidStartLoad( _ webView: UIWebView){
         myActivityIndicator.startAnimating()
     }
     
-    func webViewDidFinishLoad( webView: UIWebView){
+    func webViewDidFinishLoad( _ webView: UIWebView){
         myActivityIndicator.stopAnimating()
         
     }
     
-    func webView(webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool{
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool{
         
         let url = request.url;
         url?.absoluteString

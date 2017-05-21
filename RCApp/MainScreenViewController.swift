@@ -22,5 +22,17 @@ class MainScreenViewController: UIViewController {
         navigationItem.title = "Main Screen"
     }
     
+    @IBAction func weatherButtonAction(_ sender: Any) {
+    
+        WeatherService.getWeather(completion: { weather in
+            self.navigationController?.pushViewController(self.createViewControllerFrom(weather: weather), animated: true)
+        })
+    }
+    
+    func createViewControllerFrom(weather:Weather)->WeatherDetailsViewController{
+        let weatherDetailsViewController = self.storyboard?.instantiateViewController(withIdentifier: "WeatherDetailsViewController") as? WeatherDetailsViewController
+        weatherDetailsViewController?.weather = weather
+        return weatherDetailsViewController!
+    }
 
 }
