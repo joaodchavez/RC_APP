@@ -1,15 +1,19 @@
 PODS:
   - FZAccordionTableView (0.2.3)
+  - SnapKit (3.2.0)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - FZAccordionTableView (~> 0.2.3)
+  - SnapKit (~> 3.2.0)
   - SwiftyJSON
+  - SwiftyJSON (~> 3.1.3)
 
 SPEC CHECKSUMS:
   FZAccordionTableView: e64f49c71c32d750feda14025b088bcd25d1a71f
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: e9c71e3542f1f85951c36ef6c5f6285d0e237c38
+PODFILE CHECKSUM: d0882e56e23b86f4daf0878060e50f71ee2a8c12
 
 COCOAPODS: 1.2.0
