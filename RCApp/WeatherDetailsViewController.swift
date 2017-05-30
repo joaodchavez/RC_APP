@@ -82,133 +82,33 @@ class WeatherDetailsViewController: UIViewController {
         }
         
         //Labels
-        let labelAirPressure = UILabel()
-        //labelAirPressure.backgroundColor = UIColor.blue
-        labelAirPressure.text = "Air Pressure:"
-        labelAirPressure.textColor = UIColor.black
         
-//        labelValueAirPressure.backgroundColor = UIColor.blue
-        labelValueAirPressure.text = "Air Pressure"
-        labelValueAirPressure.textColor = UIColor.black
+        let labelAirPressure = configureLabel(addingTo : view, elementOnTop: stackView, elementLeft: superview!, elementRight: nil, text: "Air Pressure:", constraintsTop: 20, constraintsLeft: 20, constraintsRight: nil)
         
-        let labelApplicableDate = UILabel()
-//        labelApplicableDate.backgroundColor = UIColor.blue
-        labelApplicableDate.text = "Applicable Date:"
-        labelApplicableDate.textColor = UIColor.black
+        labelValueAirPressure = configureLabel(addingTo : view, elementOnTop: stackView, elementLeft: nil, elementRight: superview, text: "Air Pressure", constraintsTop: 20, constraintsLeft: nil, constraintsRight: -20)
         
-//        labelValueApplicableDate.backgroundColor = UIColor.blue
-        labelValueApplicableDate.text = "Applicable Date"
-        labelValueApplicableDate.textColor = UIColor.black
+        let labelApplicableDate = configureLabel(addingTo : view, elementOnTop: labelAirPressure, elementLeft: superview, elementRight: nil, text: "Applicable Date:", constraintsTop: 20, constraintsLeft: 20, constraintsRight: nil)
+
+        labelValueApplicableDate = configureLabel(addingTo : view, elementOnTop: labelAirPressure, elementLeft: nil, elementRight: superview, text: "Applicable Date", constraintsTop: 20, constraintsLeft: nil, constraintsRight: -20)
         
-        let labelHumidity = UILabel()
-//        labelHumidity.backgroundColor = UIColor.blue
-        labelHumidity.text = "Humidity:"
-        labelHumidity.textColor = UIColor.black
+        let labelHumidity = configureLabel(addingTo : view, elementOnTop: labelApplicableDate, elementLeft: superview, elementRight: nil, text: "Humidity:", constraintsTop: 20, constraintsLeft: 20, constraintsRight: nil)
         
-//        labelValueHumidity.backgroundColor = UIColor.blue
-        labelValueHumidity.text = "Humidity"
-        labelValueHumidity.textColor = UIColor.black
+        labelValueHumidity = configureLabel(addingTo : view, elementOnTop: labelApplicableDate, elementLeft: nil, elementRight: superview, text: "Humidity", constraintsTop: 20, constraintsLeft: nil, constraintsRight: -20)
         
-        let labelMaxTemp = UILabel()
-//        labelMaxTemp.backgroundColor = UIColor.blue
-        labelMaxTemp.text = "Max Temp:"
-        labelMaxTemp.textColor = UIColor.black
+        let labelMaxTemp = configureLabel(addingTo : view, elementOnTop: labelHumidity, elementLeft: superview, elementRight: nil, text: "Max Temp:", constraintsTop: 20, constraintsLeft: 20, constraintsRight: nil)
         
-//        labelValueMaxTemp.backgroundColor = UIColor.blue
-        labelValueMaxTemp.text = "Max Temp"
-        labelValueMaxTemp.textColor = UIColor.black
+        labelValueMaxTemp = configureLabel(addingTo : view, elementOnTop: labelValueHumidity, elementLeft: nil, elementRight: superview, text: "Max Temp", constraintsTop: 20, constraintsLeft: nil, constraintsRight: -20)
         
-        let labelMinTemp = UILabel()
-//        labelMinTemp.backgroundColor = UIColor.blue
-        labelMinTemp.text = "Min Temp:"
-        labelMinTemp.textColor = UIColor.black
+        let labelMinTemp = configureLabel(addingTo : view, elementOnTop: labelMaxTemp, elementLeft: superview, elementRight: nil, text: "Min Temp:", constraintsTop: 20, constraintsLeft: 20, constraintsRight: nil)
+        
+        labelValueMinTemp = configureLabel(addingTo : view, elementOnTop: labelValueMaxTemp, elementLeft: nil, elementRight: superview, text: "Min Temp", constraintsTop: 20, constraintsLeft: nil, constraintsRight: -20)
+        
+        let labelWindSpeed = configureLabel(addingTo : view, elementOnTop: labelMinTemp, elementLeft: superview, elementRight: nil, text: "Wind Speed:", constraintsTop: 20, constraintsLeft: 20, constraintsRight: nil)
+        
+        labelValueWindSpeed = configureLabel(addingTo : view, elementOnTop: labelValueMinTemp, elementLeft: nil, elementRight: superview, text: "Wind Speed", constraintsTop: 20, constraintsLeft: nil, constraintsRight: -20)
+        
     
-//        labelValueMinTemp.backgroundColor = UIColor.blue
-        labelValueMinTemp.text = "Min Temp"
-        labelValueMinTemp.textColor = UIColor.black
-        
-        let labelWindSpeed = UILabel()
-//        labelWindSpeed.backgroundColor = UIColor.blue
-        labelWindSpeed.text = "Wind Speed:"
-        labelWindSpeed.textColor = UIColor.black
-        
-//        labelValueWindSpeed.backgroundColor = UIColor.blue
-        labelValueWindSpeed.text = "Wind Speed"
-        labelValueWindSpeed.textColor = UIColor.black
-        
-        view.addSubview(labelAirPressure)
-        view.addSubview(labelValueAirPressure)
-        view.addSubview(labelApplicableDate)
-        view.addSubview(labelValueApplicableDate)
-        view.addSubview(labelHumidity)
-        view.addSubview(labelValueHumidity)
-        view.addSubview(labelMaxTemp)
-        view.addSubview(labelValueMaxTemp)
-        view.addSubview(labelMinTemp)
-        view.addSubview(labelValueMinTemp)
-        view.addSubview(labelWindSpeed)
-        view.addSubview(labelValueWindSpeed)
-        
-        labelAirPressure.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(stackView.snp.bottom).offset(20)
-            make.left.equalTo(superview!).offset(20)
         }
-        
-        labelValueAirPressure.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(stackView.snp.bottom).offset(20)
-            make.right.equalTo(superview!).offset(-20)
-        }
-        
-        labelApplicableDate.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(labelAirPressure.snp.bottom).offset(20)
-            make.left.equalTo(superview!).offset(20)
-        }
-        
-        labelValueApplicableDate.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(labelValueAirPressure.snp.bottom).offset(20)
-            make.right.equalTo(superview!).offset(-20)
-        }
-        
-        labelHumidity.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(labelApplicableDate.snp.bottom).offset(20)
-            make.left.equalTo(superview!).offset(20)
-        }
-        
-        labelValueHumidity.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(labelValueApplicableDate.snp.bottom).offset(20)
-            make.right.equalTo(superview!).offset(-20)
-        }
-        
-        labelMaxTemp.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(labelHumidity.snp.bottom).offset(20)
-            make.left.equalTo(superview!).offset(20)
-        }
-        
-        labelValueMaxTemp.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(labelValueHumidity.snp.bottom).offset(20)
-            make.right.equalTo(superview!).offset(-20)
-        }
-        
-        labelMinTemp.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(labelMaxTemp.snp.bottom).offset(20)
-            make.left.equalTo(superview!).offset(20)
-        }
-        
-        labelValueMinTemp.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(labelValueMaxTemp.snp.bottom).offset(20)
-            make.right.equalTo(superview!).offset(-20)
-        }
-        
-        labelWindSpeed.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(labelMinTemp.snp.bottom).offset(20)
-            make.left.equalTo(superview!).offset(20)
-        }
-        
-        labelValueWindSpeed.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(labelValueMinTemp.snp.bottom).offset(20)
-            make.right.equalTo(superview!).offset(-20)
-        }
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -224,7 +124,29 @@ class WeatherDetailsViewController: UIViewController {
     }
 }
 
-
 class WeatherUIButton: UIButton {
     var weatherDaily: WeatherDaily?
+}
+
+func configureLabel(addingTo view: UIView, elementOnTop: UIView, elementLeft: UIView?, elementRight: UIView?, text: String, constraintsTop: Int, constraintsLeft: Int?, constraintsRight: Int?) -> UILabel{
+
+    let label = UILabel()
+    label.text = text
+    label.textColor = UIColor.black
+
+    view.addSubview(label)
+    
+    label.snp.makeConstraints { (make) -> Void in
+        make.top.equalTo(elementOnTop.snp.bottom).offset(constraintsTop)
+        
+        if let elementLeft = elementLeft {
+            make.left.equalTo(elementLeft).offset(constraintsLeft!)
+        }
+        if let elementRight = elementRight {
+            make.right.equalTo(elementRight).offset(constraintsRight!)
+        }
+        
+        
+    }
+     return label
 }
