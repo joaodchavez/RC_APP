@@ -30,9 +30,11 @@ class MainScreenViewController: UIViewController {
     }
     
     func createViewControllerFrom(weather:Weather)->WeatherDetailsViewController{
-        let weatherDetailsViewController = self.storyboard?.instantiateViewController(withIdentifier: "WeatherDetailsViewController") as? WeatherDetailsViewController
-        weatherDetailsViewController?.weather = weather
-        return weatherDetailsViewController!
+        let weatherDetailsViewController = WeatherDetailsViewController()
+        
+        weatherDetailsViewController.weather = weather
+        
+        return weatherDetailsViewController
     }
 
 }
