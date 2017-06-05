@@ -81,6 +81,7 @@ struct WeatherDaily {
     let windDirection : Double
     let minTemp : Double
     let windSpeed : Double
+    let weatherStateAbbr : String
     
     init?(JSON inJson: SwiftyJSON.JSON ){
         airPressure = inJson["air_pressure"].intValue
@@ -90,6 +91,8 @@ struct WeatherDaily {
         windDirection = inJson["wind_direction"].doubleValue
         minTemp = inJson["min_temp"].doubleValue
         windSpeed = inJson["wind_speed"].doubleValue
+        weatherStateAbbr = inJson["weather_state_abbr"].stringValue
+        
     }
 }
 
