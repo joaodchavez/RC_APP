@@ -55,8 +55,15 @@ class WeatherDetailsViewController: UIViewController {
             dayButton.weatherDaily = weatherDaily
             dayButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
             
-            let blueColor = 50 +  incrementColor
-            dayButton.backgroundColor =  UIColor(red: 0, green: 0, blue: CGFloat(blueColor)/255, alpha: 1)
+            let iconName = getIconName(abbreviation: weatherDaily.weatherStateAbbr)
+            
+            //add background image
+            let image = UIImage(named: iconName) as UIImage?
+            dayButton.setBackgroundImage(image, for: UIControlState.normal)
+            
+            
+            //let blueColor = 50 +  incrementColor
+//            dayButton.backgroundColor =  UIColor(red: 0, green: 0, blue: /*CGFloat(blueColor)/255*/, alpha: 1)
             let dateAsString = weatherDaily.applicableDate
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd"
@@ -69,11 +76,11 @@ class WeatherDetailsViewController: UIViewController {
             }
             dayButton.snp.makeConstraints { (make) -> Void in
                 make.width.equalTo(60)
-                make.height.equalTo(50)
+                make.height.equalTo(60)
             }
             stackView.addArrangedSubview(dayButton)
             
-            incrementColor += 30
+            //incrementColor += 30
         }
         
         stackView.snp.makeConstraints { (make) -> Void in
@@ -106,8 +113,7 @@ class WeatherDetailsViewController: UIViewController {
         let labelWindSpeed = configureLabel(addingTo : view, elementOnTop: labelMinTemp, elementLeft: superview, elementRight: nil, text: "Wind Speed:", constraintsTop: 20, constraintsLeft: 20, constraintsRight: nil)
         
         labelValueWindSpeed = configureLabel(addingTo : view, elementOnTop: labelValueMinTemp, elementLeft: nil, elementRight: superview, text: "Wind Speed", constraintsTop: 20, constraintsLeft: nil, constraintsRight: -20)
-        
-    
+            
         }
 
     override func didReceiveMemoryWarning() {
@@ -121,6 +127,28 @@ class WeatherDetailsViewController: UIViewController {
         labelValueMaxTemp.text = String(describing: sender.weatherDaily!.maxTemp)
         labelValueMinTemp.text = String(describing: sender.weatherDaily!.minTemp)
         labelValueWindSpeed.text = String(describing: sender.weatherDaily!.windSpeed)
+    }
+    
+    func getIconName(abbreviation : String)-> String{
+        
+        let precipitiation = ["sn", "sl", "h", "t", "hr", "lr", "s"]
+        let cloudy = ["hc","lc"]
+        //let clear = "c"
+        
+        var iconName = ""
+        
+        if precipitiation.contains(abbreviation){
+            iconName = WeatherIcon.Rainy.rawValue
+        }
+        else {
+            if cloudy.contains(abbreviation) {
+                iconName = WeatherIcon.Cloudy.rawValue
+            }
+            else {
+             iconName = WeatherIcon.Clear.rawValue
+            }
+        }
+        return iconName
     }
 }
 
