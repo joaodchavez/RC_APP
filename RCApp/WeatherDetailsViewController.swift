@@ -13,18 +13,28 @@ class WeatherDetailsViewController: UIViewController {
 
     var weather: Weather?
     var labelValueAirPressure = UILabel()
-    var labelValueApplicableDate = UILabel()
     var labelValueHumidity = UILabel()
     var labelValueMaxTemp = UILabel()
     var labelValueMinTemp = UILabel()
     var labelValueWindSpeed = UILabel()
-    
+    var cloudTop = UIImageView()
+    var cloudBottom = UIImageView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let superview = self.view
         superview?.backgroundColor = UIColor(red: 0, green: 0.5647, blue: 0.9686, alpha: 1.0)
         navigationItem.title = "Weather Forecast"
+        
+        //Animation background
+        UIView.animate(withDuration: 5, delay: 0.0, options:[UIViewAnimationOptions.repeat, UIViewAnimationOptions.autoreverse, UIViewAnimationOptions.allowUserInteraction, .beginFromCurrentState], animations: {
+            self.view.backgroundColor = UIColor(red: 0, green: 0.5647, blue: 0.9686, alpha: 1.0)
+            self.view.backgroundColor = UIColor(red: 0, green: 0.651, blue: 0.8588, alpha: 1.0)
+            self.view.backgroundColor = UIColor(red: 0, green: 0.7, blue: 0.7, alpha: 1.0)
+            self.view.backgroundColor = UIColor(red: 0, green: 0.8, blue: 0.6, alpha: 1.0)
+        }, completion: nil)
+    
         
         // Added title label
         let titleLabel = UILabel()
@@ -81,45 +91,111 @@ class WeatherDetailsViewController: UIViewController {
             make.centerX.equalTo(superview!)
         }
         
+        
+        //add clouds
+        let imageCloudTop: UIImage = UIImage(named: "bg-sunny-cloud-2")!
+        cloudTop = UIImageView(image: imageCloudTop)
+        let imageCloudBottom: UIImage = UIImage(named: "bg-sunny-cloud-3")!
+        cloudBottom = UIImageView(image: imageCloudBottom)
+        
+        view.addSubview(cloudTop)
+        view.addSubview(cloudBottom)
+        
+        cloudTop.snp.makeConstraints { (make) -> Void in
+            //make.left.equalTo(superview!).offset(-80)
+            make.centerY.equalTo(superview!).offset(100)
+        }
+        cloudBottom.snp.makeConstraints { (make) -> Void in
+            make.left.equalTo(superview!).offset(80)
+            make.centerY.equalTo(superview!).offset(180)
+        }
+
+        
         //Labels
         
         let labelAirPressure = configureLabel(addingTo : view, elementOnTop: stackView, elementLeft: superview!, elementRight: nil, text: "Air Pressure:", constraintsTop: 20, constraintsLeft: 20, constraintsRight: nil)
         
         labelValueAirPressure = configureLabel(addingTo : view, elementOnTop: stackView, elementLeft: nil, elementRight: superview, text: "Air Pressure", constraintsTop: 20, constraintsLeft: nil, constraintsRight: -20)
         
-        let labelApplicableDate = configureLabel(addingTo : view, elementOnTop: labelAirPressure, elementLeft: superview, elementRight: nil, text: "Applicable Date:", constraintsTop: 20, constraintsLeft: 20, constraintsRight: nil)
-
-        labelValueApplicableDate = configureLabel(addingTo : view, elementOnTop: labelAirPressure, elementLeft: nil, elementRight: superview, text: "Applicable Date", constraintsTop: 20, constraintsLeft: nil, constraintsRight: -20)
+        let labelHumidity = configureLabel(addingTo : view, elementOnTop: labelAirPressure, elementLeft: superview, elementRight: nil, text: "Humidity:", constraintsTop: 20, constraintsLeft: 20, constraintsRight: nil)
         
-        let labelHumidity = configureLabel(addingTo : view, elementOnTop: labelApplicableDate, elementLeft: superview, elementRight: nil, text: "Humidity:", constraintsTop: 20, constraintsLeft: 20, constraintsRight: nil)
+        labelValueHumidity = configureLabel(addingTo : view, elementOnTop: labelAirPressure, elementLeft: nil, elementRight: superview, text: "Humidity", constraintsTop: 20, constraintsLeft: nil, constraintsRight: -20)
         
-        labelValueHumidity = configureLabel(addingTo : view, elementOnTop: labelApplicableDate, elementLeft: nil, elementRight: superview, text: "Humidity", constraintsTop: 20, constraintsLeft: nil, constraintsRight: -20)
+        let labelMaxTemp = configureLabel(addingTo : view, elementOnTop: labelHumidity, elementLeft: superview, elementRight: nil, text: "Max Temp (°F):", constraintsTop: 20, constraintsLeft: 20, constraintsRight: nil)
         
-        let labelMaxTemp = configureLabel(addingTo : view, elementOnTop: labelHumidity, elementLeft: superview, elementRight: nil, text: "Max Temp:", constraintsTop: 20, constraintsLeft: 20, constraintsRight: nil)
+        labelValueMaxTemp = configureLabel(addingTo : view, elementOnTop: labelValueHumidity, elementLeft: nil, elementRight: superview, text: "Max Temp ", constraintsTop: 20, constraintsLeft: nil, constraintsRight: -20)
         
-        labelValueMaxTemp = configureLabel(addingTo : view, elementOnTop: labelValueHumidity, elementLeft: nil, elementRight: superview, text: "Max Temp", constraintsTop: 20, constraintsLeft: nil, constraintsRight: -20)
+        let labelMinTemp = configureLabel(addingTo : view, elementOnTop: labelMaxTemp, elementLeft: superview, elementRight: nil, text: "Min Temp (°F):", constraintsTop: 20, constraintsLeft: 20, constraintsRight: nil)
         
-        let labelMinTemp = configureLabel(addingTo : view, elementOnTop: labelMaxTemp, elementLeft: superview, elementRight: nil, text: "Min Temp:", constraintsTop: 20, constraintsLeft: 20, constraintsRight: nil)
-        
-        labelValueMinTemp = configureLabel(addingTo : view, elementOnTop: labelValueMaxTemp, elementLeft: nil, elementRight: superview, text: "Min Temp", constraintsTop: 20, constraintsLeft: nil, constraintsRight: -20)
+        labelValueMinTemp = configureLabel(addingTo : view, elementOnTop: labelValueMaxTemp, elementLeft: nil, elementRight: superview, text: "Min Temp ", constraintsTop: 20, constraintsLeft: nil, constraintsRight: -20)
         
         let labelWindSpeed = configureLabel(addingTo : view, elementOnTop: labelMinTemp, elementLeft: superview, elementRight: nil, text: "Wind Speed:", constraintsTop: 20, constraintsLeft: 20, constraintsRight: nil)
         
         labelValueWindSpeed = configureLabel(addingTo : view, elementOnTop: labelValueMinTemp, elementLeft: nil, elementRight: superview, text: "Wind Speed", constraintsTop: 20, constraintsLeft: nil, constraintsRight: -20)
-            
-        }
+        
+        
+    }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //Cloud Animation
+        cloudTop.center.x  -= view.bounds.width
+        cloudBottom.center.x -= view.bounds.width
+        
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        UIView.animate(withDuration: 7, delay: 0, options: [.repeat, .autoreverse, .allowUserInteraction, .beginFromCurrentState],
+                       animations: {
+                        self.cloudTop.center.x += self.view.bounds.width + 140
+        },
+                       completion: nil
+        )
+        
+        
+        UIView.animate(withDuration: 8, delay: 0, options: [.repeat, .autoreverse, .allowUserInteraction, .beginFromCurrentState],
+                       animations: {
+                        self.cloudBottom.center.x += self.view.bounds.width + 60
+                        self.cloudBottom.superview?.layoutIfNeeded()
+        },
+                       completion: nil
+        )
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     func buttonAction(sender: WeatherUIButton!) {
         labelValueAirPressure.text = String(describing: sender.weatherDaily!.airPressure)
-        labelValueApplicableDate.text = String(describing: sender.weatherDaily!.applicableDate)
         labelValueHumidity.text = String(describing: sender.weatherDaily!.humidity)
-        labelValueMaxTemp.text = String(describing: sender.weatherDaily!.maxTemp)
-        labelValueMinTemp.text = String(describing: sender.weatherDaily!.minTemp)
-        labelValueWindSpeed.text = String(describing: sender.weatherDaily!.windSpeed)
+        labelValueMaxTemp.text = String(describing: convertToFahrenheit(value: sender.weatherDaily!.maxTemp))
+        labelValueMinTemp.text = String(describing: convertToFahrenheit(value: sender.weatherDaily!.minTemp))
+        labelValueWindSpeed.text = String(describing: Double(round(100*sender.weatherDaily!.windSpeed)/100))
+        
+        
+//        UIView.animate(withDuration: 2, delay: 0.0, options: [.repeat, .autoreverse, .allowUserInteraction],
+//                       animations: {
+//                        //self.cloudBottom.center.x += self.view.bounds.width - 60
+////                        self.cloudBottom.snp_updateConstraints { make in
+////                            make.left.equalTo(50)
+////                        }
+//                        self.cloudTop.superview?.layoutIfNeeded() //it will work
+        //        },
+//                       completion: nil
+//        )
+
+//        self.cloudTop.superview?.layoutIfNeeded()
+//        self.cloudTop.layoutIfNeeded()
+        
+        //ease out animation TODO
+        
+        
     }
     
     func getIconName(basedOnAbbreviation abbreviation: String)-> String{
@@ -140,6 +216,13 @@ class WeatherDetailsViewController: UIViewController {
         }
         return iconName
     }
+    
+    func convertToFahrenheit(value : Double)-> Double{
+        let finalValue = (value*(9/5)) + 32
+        return Double(round(100*finalValue)/100)
+    }
+    
+    
     
     func getFormatDate(basedOn date : String) -> String{
         var finalString = ""
