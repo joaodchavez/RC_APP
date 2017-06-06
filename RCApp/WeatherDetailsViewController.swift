@@ -23,12 +23,12 @@ class WeatherDetailsViewController: UIViewController {
         super.viewDidLoad()
         
         let superview = self.view
-        superview?.backgroundColor = UIColor(red:0.38, green:0.85, blue:0.88, alpha:1)
+        superview?.backgroundColor = UIColor(red: 0, green: 0.5647, blue: 0.9686, alpha: 1.0)
+        navigationItem.title = "Weather Forecast"
         
         // Added title label
         let titleLabel = UILabel()
         view.addSubview(titleLabel)
-        titleLabel.text = "Weather Forecast"
         titleLabel.textColor = UIColor.black
         titleLabel.sizeToFit()
         titleLabel.snp.makeConstraints { (make) -> Void in
@@ -44,47 +44,40 @@ class WeatherDetailsViewController: UIViewController {
         
         view.addSubview(stackView)
         
-        var incrementColor = 30
-        
         //Buttons
         for weatherDaily in (weather?.consolidateWeather)!{
             
             let dayButton: WeatherUIButton = WeatherUIButton()
+            
+            //Configuration
             dayButton.layer.borderWidth = 1
             dayButton.layer.borderColor = UIColor.white.cgColor
+            dayButton.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+            dayButton.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
+            dayButton.titleLabel?.textAlignment = NSTextAlignment.center
+            dayButton.backgroundColor =   UIColor(red: 0, green: 0.5137, blue: 0.7176, alpha: 1.0)
+            dayButton.setBackgroundImage(
+                UIImage(named: getIconName(basedOnAbbreviation: weatherDaily.weatherStateAbbr)) as UIImage?
+                , for: UIControlState.normal)
+
+            //Data & targets
             dayButton.weatherDaily = weatherDaily
             dayButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
             
-            let iconName = getIconName(abbreviation: weatherDaily.weatherStateAbbr)
+            //Date Format
+            dayButton.setTitle("\(getFormatDate(basedOn: weatherDaily.applicableDate))",
+                for: .normal)
             
-            //add background image
-            let image = UIImage(named: iconName) as UIImage?
-            dayButton.setBackgroundImage(image, for: UIControlState.normal)
-            
-            
-            //let blueColor = 50 +  incrementColor
-//            dayButton.backgroundColor =  UIColor(red: 0, green: 0, blue: /*CGFloat(blueColor)/255*/, alpha: 1)
-            let dateAsString = weatherDaily.applicableDate
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd"
-            
-            if let date = dateFormatter.date(from: dateAsString) {
-                dateFormatter.dateFormat = "dd-MM"
-                print("date is \(dateFormatter.string(from: date))")
-                
-                dayButton.setTitle("\(dateFormatter.string(from: date))", for: .normal)
-            }
+            //Constraints
             dayButton.snp.makeConstraints { (make) -> Void in
                 make.width.equalTo(60)
                 make.height.equalTo(60)
             }
             stackView.addArrangedSubview(dayButton)
-            
-            //incrementColor += 30
         }
         
         stackView.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(superview!.snp.top).offset(130)
+            make.top.equalTo(superview!.snp.top).offset(90)
             make.centerX.equalTo(superview!)
         }
         
@@ -129,12 +122,9 @@ class WeatherDetailsViewController: UIViewController {
         labelValueWindSpeed.text = String(describing: sender.weatherDaily!.windSpeed)
     }
     
-    func getIconName(abbreviation : String)-> String{
-        
+    func getIconName(basedOnAbbreviation abbreviation: String)-> String{
         let precipitiation = ["sn", "sl", "h", "t", "hr", "lr", "s"]
         let cloudy = ["hc","lc"]
-        //let clear = "c"
-        
         var iconName = ""
         
         if precipitiation.contains(abbreviation){
@@ -150,6 +140,19 @@ class WeatherDetailsViewController: UIViewController {
         }
         return iconName
     }
+    
+    func getFormatDate(basedOn date : String) -> String{
+        var finalString = ""
+        let dateAsString = date
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+    
+        if let date = dateFormatter.date(from: dateAsString) {
+            dateFormatter.dateFormat = "E dd MM"
+            finalString = dateFormatter.string(from: date)
+        }
+        return finalString
+    }
 }
 
 class WeatherUIButton: UIButton {
@@ -160,7 +163,7 @@ func configureLabel(addingTo view: UIView, elementOnTop: UIView, elementLeft: UI
 
     let label = UILabel()
     label.text = text
-    label.textColor = UIColor.black
+    label.textColor = UIColor.darkText
 
     view.addSubview(label)
     
@@ -173,8 +176,6 @@ func configureLabel(addingTo view: UIView, elementOnTop: UIView, elementLeft: UI
         if let elementRight = elementRight {
             make.right.equalTo(elementRight).offset(constraintsRight!)
         }
-        
-        
     }
      return label
 }
