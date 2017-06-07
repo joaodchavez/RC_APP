@@ -19,6 +19,8 @@ class WeatherDetailsViewController: UIViewController {
     var labelValueWindSpeed = UILabel()
     var cloudTop = UIImageView()
     var cloudBottom = UIImageView()
+    var cloudTopRight = UIImageView()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,22 +99,29 @@ class WeatherDetailsViewController: UIViewController {
         cloudTop = UIImageView(image: imageCloudTop)
         let imageCloudBottom: UIImage = UIImage(named: "bg-sunny-cloud-3")!
         cloudBottom = UIImageView(image: imageCloudBottom)
+        let imageCloudTopRight: UIImage = UIImage(named: "bg-sunny-cloud-2")!
+        cloudTopRight = UIImageView(image: imageCloudTopRight)
+        
         
         view.addSubview(cloudTop)
         view.addSubview(cloudBottom)
+        view.addSubview(cloudTopRight)
         
         cloudTop.snp.makeConstraints { (make) -> Void in
             //make.left.equalTo(superview!).offset(-80)
             make.centerY.equalTo(superview!).offset(100)
         }
         cloudBottom.snp.makeConstraints { (make) -> Void in
-            make.left.equalTo(superview!).offset(80)
+            //make.left.equalTo(superview!).offset(80)
             make.centerY.equalTo(superview!).offset(180)
+        }
+        cloudTopRight.snp.makeConstraints { (make) -> Void in
+            //make.left.equalTo(superview!).offset(80)
+            make.centerY.equalTo(superview!).offset(250)
         }
 
         
         //Labels
-        
         let labelAirPressure = configureLabel(addingTo : view, elementOnTop: stackView, elementLeft: superview!, elementRight: nil, text: "Air Pressure:", constraintsTop: 20, constraintsLeft: 20, constraintsRight: nil)
         
         labelValueAirPressure = configureLabel(addingTo : view, elementOnTop: stackView, elementLeft: nil, elementRight: superview, text: "Air Pressure", constraintsTop: 20, constraintsLeft: nil, constraintsRight: -20)
@@ -142,6 +151,7 @@ class WeatherDetailsViewController: UIViewController {
         //Cloud Animation
         cloudTop.center.x  -= view.bounds.width
         cloudBottom.center.x -= view.bounds.width
+        cloudTopRight.center.x += view.bounds.width
         
     }
     
@@ -161,6 +171,13 @@ class WeatherDetailsViewController: UIViewController {
                        animations: {
                         self.cloudBottom.center.x += self.view.bounds.width + 60
                         self.cloudBottom.superview?.layoutIfNeeded()
+        },
+                       completion: nil
+        )
+        
+        UIView.animate(withDuration: 7, delay: 0, options: [.repeat, .autoreverse, .allowUserInteraction, .beginFromCurrentState],
+                       animations: {
+                        self.cloudTopRight.center.x -= self.view.bounds.width
         },
                        completion: nil
         )
