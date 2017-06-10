@@ -10,14 +10,14 @@ import UIKit
 
 class AccessoriesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var accessories: [Accessories] = []
+    var accessories: [AccessoryModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let superview = self.view
         
-        accessories = Accessories.seedData()
+        accessories = AccessoryModel.seedData()
         
         let tableView = UITableView(frame: view.bounds, style: .grouped)
         tableView.delegate = self
@@ -67,29 +67,29 @@ class AccessoriesViewController: UIViewController, UITableViewDataSource, UITabl
 }
 
 
-class Accessories {
+class AccessoryModel {
     var name: String = ""
     var description: String = ""
     var image = UIImage()
     var url: String = ""
     
-    class func seedData()->[Accessories]{
-        var arrayAccessories = [Accessories] ()
+    class func seedData()->[AccessoryModel]{
+        var arrayAccessories = [AccessoryModel] ()
         
-        let accessoryOne = Accessories()
+        let accessoryOne = AccessoryModel()
         accessoryOne.name = "Example One"
         accessoryOne.description = "description one"
         accessoryOne.image = UIImage(named: "image1")!
         accessoryOne.url = "http://www.rockandice.com/"
         
-        let accessoryTwo = Accessories()
+        let accessoryTwo = AccessoryModel()
         accessoryTwo.name = "Example Two"
         accessoryTwo.description = "description two"
         accessoryTwo.image = UIImage(named: "image2")!
         accessoryTwo.url = "https://www.mountainproject.com/"
         
         
-        let accessoryThree = Accessories()
+        let accessoryThree = AccessoryModel()
         accessoryThree.name = "Example One"
         accessoryThree.description = "description one"
         accessoryThree.image = UIImage(named: "image3")!
@@ -112,7 +112,7 @@ class AccessoryCell: UITableViewCell {
     var descriptionLabel: UILabel!
     var imageAccessory : UIImageView!
     
-    var accessory: Accessories? {
+    var accessory: AccessoryModel? {
         didSet {
             if let s = accessory {
                 background.backgroundColor = UIColor(red: 0, green: 0.8, blue: 0.9098, alpha: 1.0)
@@ -155,7 +155,6 @@ class AccessoryCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        
     }
     
     override func layoutSubviews() {
