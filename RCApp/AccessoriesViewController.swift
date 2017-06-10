@@ -56,9 +56,22 @@ class AccessoriesViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 120
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.navigationController?.pushViewController(self.createViewControllerFrom(accessory : accessories[indexPath.row]), animated: true)
+        
     }
 
+    func createViewControllerFrom(accessory :AccessoryModel)->AccessoriesDetailsViewController{
+        let accessoriesDetailsViewController = AccessoriesDetailsViewController( accessory: accessory)
+        
+        //accessoriesDetailsViewController.accesoryData = accessory
+        
+        return accessoriesDetailsViewController
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -77,23 +90,22 @@ class AccessoryModel {
         var arrayAccessories = [AccessoryModel] ()
         
         let accessoryOne = AccessoryModel()
-        accessoryOne.name = "Example One"
-        accessoryOne.description = "description one"
-        accessoryOne.image = UIImage(named: "image1")!
-        accessoryOne.url = "http://www.rockandice.com/"
+        accessoryOne.name = "La Sportiva Miura Lace Climbing Shoe - Men's"
+        accessoryOne.description = "This climbing shoe from La Sportiva Miura fuses edging precision, sensitivity, and comfort into one lasting package."
+        accessoryOne.image = UIImage(named: "shoe1")!
+        accessoryOne.url = "https://www.amazon.com/Sportiva-Climbing-Yellow-Wiregate-Carabiners/dp/B01EGTRGOI/ref=sr_1_64?s=apparel&ie=UTF8&qid=1497068945&sr=1-64&nodeID=7141123011&psd=1&keywords=rock+climbing+shoes"
         
         let accessoryTwo = AccessoryModel()
-        accessoryTwo.name = "Example Two"
-        accessoryTwo.description = "description two"
-        accessoryTwo.image = UIImage(named: "image2")!
-        accessoryTwo.url = "https://www.mountainproject.com/"
-        
+        accessoryTwo.name = "Evolv Addict Climbing Shoe"
+        accessoryTwo.description = "A slipper built for all climbers and for all terrain; the local gyms, Joshua Tree slabs and Indian Creek cracks. Its asymmetrical shape and low toe-profile accommodates all abilities. Beginner/intermediate climbers will fit these with a more relaxed toe curl. Advanced climbers may down size a bit for increased toe power.TRAX Rubber"
+        accessoryTwo.image = UIImage(named: "shoe2")!
+        accessoryTwo.url = "https://www.amazon.com/Evolv-Addict-Climbing-Shoe-Yellow/dp/B00E41S3O6/ref=sr_1_103?s=apparel&ie=UTF8&qid=1497068963&sr=1-103&nodeID=7141123011&psd=1&keywords=rock+climbing+shoes"
         
         let accessoryThree = AccessoryModel()
-        accessoryThree.name = "Example One"
-        accessoryThree.description = "description one"
-        accessoryThree.image = UIImage(named: "image3")!
-        accessoryThree.url = "http://www.climbing.com/people/doctor-of-climbology-13-must-follow-climbing-websites-blogs-and-podcasts/"
+        accessoryThree.name = "Chalk Bag for Rock Climbing, Weightlifting, Bouldering & Gymnastics with Drawstring Closure, Quick-clip Belt and Valuables Securely Holding Zippered Pocket - Lifetime Guarantee"
+        accessoryThree.description = "Point Break Rock Climbing Chalk Bag, Make you climb to the top easily."
+        accessoryThree.image = UIImage(named: "bag1")!
+        accessoryThree.url = "https://www.amazon.com/Point-Break-Drawstring-Quick-Clip-Zippered/dp/B01EQ6P39Q/ref=sr_1_145?s=apparel&ie=UTF8&qid=1497068963&sr=1-145-spons&nodeID=7141123011&psd=1&keywords=rock+climbing+shoes&psc=1"
         
         arrayAccessories.append(accessoryOne)
         arrayAccessories.append(accessoryTwo)
@@ -136,16 +148,22 @@ class AccessoryCell: UITableViewCell {
         
         imageAccessory = UIImageView(frame :.zero)
         imageAccessory.contentMode = .scaleAspectFit
+        imageAccessory.backgroundColor = .white
         contentView.addSubview(imageAccessory)
         
         nameLabel = UILabel(frame: .zero)
         nameLabel.textAlignment = .left
         nameLabel.textColor = UIColor.white
+        nameLabel.numberOfLines = 0;
+        nameLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
         contentView.addSubview(nameLabel)
         
         descriptionLabel = UILabel(frame: .zero)
-        descriptionLabel.textAlignment = .center
+        descriptionLabel.textAlignment = .left
         descriptionLabel.textColor = UIColor.white
+        descriptionLabel.numberOfLines = 0;
+        descriptionLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+        descriptionLabel.font = UIFont.systemFont(ofSize: 13.0);
         contentView.addSubview(descriptionLabel)
     }
     
@@ -160,8 +178,8 @@ class AccessoryCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         background.frame = CGRect(x: 0, y : padding, width: frame.width, height : frame.height - 2 * padding)
-        imageAccessory.frame = CGRect(x : 0, y: padding, width: 90, height: 90)
-        nameLabel.frame = CGRect(x : padding + 115, y: padding, width: 120, height: 25)
-        descriptionLabel.frame = CGRect(x : padding + 115 , y: (frame.height - 25)/2 , width: 120, height: 25)
+        imageAccessory.frame = CGRect(x : 0, y: padding, width: frame.height, height: frame.height - 2 * padding)
+        nameLabel.frame = CGRect(x : frame.height + 2 * padding , y: padding, width: frame.width - frame.height , height: frame.height / 2)
+        descriptionLabel.frame = CGRect(x : frame.height + 2 * padding , y: frame.height / 2 - padding, width: frame.width - frame.height , height: frame.height / 2)//CGRect(x : padding + 115 , y: (frame.height - 25)/2 , width: 320, height: frame.height / 2)
     }
 }
