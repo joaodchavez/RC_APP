@@ -27,6 +27,7 @@
 		4A49E8B11ED0EEF700403F52 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A49E8B01ED0EEF700403F52 /* WeatherService.swift */; };
 		4A49E8B31ED0EF7500403F52 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A49E8B21ED0EF7500403F52 /* Weather.swift */; };
 		4A7E05701EE5166C00C93C69 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E056F1EE5166C00C93C69 /* Enums.swift */; };
+		4A7E05901EE78C7800C93C69 /* AccessoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E058F1EE78C7800C93C69 /* AccessoriesViewController.swift */; };
 		4AD645881E7B162B00D54D84 /* AccordionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD645861E7B162B00D54D84 /* AccordionHeaderView.swift */; };
 		4AD645891E7B162B00D54D84 /* AccordionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AD645871E7B162B00D54D84 /* AccordionHeaderView.xib */; };
 		53A048A7251512FBA3B57E33 /* Pods_RCApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12953AB20347EFB225857B37 /* Pods_RCApp.framework */; };
@@ -58,6 +59,7 @@
 		4A49E8B01ED0EEF700403F52 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		4A49E8B21ED0EF7500403F52 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		4A7E056F1EE5166C00C93C69 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		4A7E058F1EE78C7800C93C69 /* AccessoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessoriesViewController.swift; sourceTree = "<group>"; };
 		4AD645851E7B0CEF00D54D84 /* RCApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RCApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		4AD645861E7B162B00D54D84 /* AccordionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccordionHeaderView.swift; sourceTree = "<group>"; };
 		4AD645871E7B162B00D54D84 /* AccordionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccordionHeaderView.xib; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				4A3475121E831F71003FC58D /* TipDetailsViewController.swift */,
 				4A3475141E833B6D003FC58D /* SourceDetailsViewController.swift */,
 				4A49E8AE1ED0ED4F00403F52 /* WeatherDetailsViewController.swift */,
+				4A7E058F1EE78C7800C93C69 /* AccessoriesViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				4A3769391E751392005E6F87 /* MainScreenViewController.swift in Sources */,
 				4A34750B1E82D09E003FC58D /* RoundedTipCell.swift in Sources */,
 				4A37693D1E75A05C005E6F87 /* ProblemModel.swift in Sources */,
+				4A7E05901EE78C7800C93C69 /* AccessoriesViewController.swift in Sources */,
 				4A34750F1E82D1AB003FC58D /* TipsCollectionViewController.swift in Sources */,
 				4AD645881E7B162B00D54D84 /* AccordionHeaderView.swift in Sources */,
 				4A3769351E7502D6005E6F87 /* WallViewController.swift in Sources */,

@@ -43,31 +43,31 @@ class TipsCollectionViewController: UICollectionViewController {
         collectionView?.refreshControl?.endRefreshing()
     }
     
-    func seedData()->[TipModel]{
-        var arrayTips = [TipModel] ()
-        
-        let tipOne = TipModel()
-        tipOne.name = "tip one"
-        tipOne.image = UIImage(named: "image1")!
-        tipOne.information = "information"
-
-        let tipTwo = TipModel()
-        tipTwo.name = "tip one"
-        tipTwo.image = UIImage(named: "image2")!
-        tipTwo.information = "information"
-        
-        let tipThree = TipModel()
-        tipThree.name = "tip one"
-        tipThree.image = UIImage(named: "image3")!
-        tipThree.information = "information"
-        
-        arrayTips.append(tipOne)
-        arrayTips.append(tipTwo)
-        arrayTips.append(tipThree)
-        
-        return arrayTips
-
-    }
+//    func seedData()->[TipModel]{
+//        var arrayTips = [TipModel] ()
+//        
+//        let tipOne = TipModel()
+//        tipOne.name = "tip one"
+//        tipOne.image = UIImage(named: "image1")!
+//        tipOne.information = "information"
+//
+//        let tipTwo = TipModel()
+//        tipTwo.name = "tip one"
+//        tipTwo.image = UIImage(named: "image2")!
+//        tipTwo.information = "information"
+//        
+//        let tipThree = TipModel()
+//        tipThree.name = "tip one"
+//        tipThree.image = UIImage(named: "image3")!
+//        tipThree.information = "information"
+//        
+//        arrayTips.append(tipOne)
+//        arrayTips.append(tipTwo)
+//        arrayTips.append(tipThree)
+//        
+//        return arrayTips
+//
+//    }
 
 }
 

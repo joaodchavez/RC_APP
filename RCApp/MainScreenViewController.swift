@@ -29,12 +29,21 @@ class MainScreenViewController: UIViewController {
         })
     }
     
+    @IBAction func accessoriesButtonAction(_ sender: Any) {
+        self.navigationController?.pushViewController(self.createViewController(), animated: true)
+    }
     func createViewControllerFrom(weather:Weather)->WeatherDetailsViewController{
         let weatherDetailsViewController = WeatherDetailsViewController()
         
         weatherDetailsViewController.weather = weather
         
         return weatherDetailsViewController
+    }
+    
+    func createViewController()->AccessoriesViewController{
+        let accessoriesViewController = AccessoriesViewController()
+        
+        return accessoriesViewController
     }
 
 }

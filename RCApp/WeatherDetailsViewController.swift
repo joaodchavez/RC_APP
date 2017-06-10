@@ -152,7 +152,6 @@ class WeatherDetailsViewController: UIViewController {
         cloudTop.center.x  -= view.bounds.width
         cloudBottom.center.x -= view.bounds.width
         cloudTopRight.center.x += view.bounds.width
-        
     }
     
     
@@ -165,7 +164,6 @@ class WeatherDetailsViewController: UIViewController {
         },
                        completion: nil
         )
-        
         
         UIView.animate(withDuration: 8, delay: 0, options: [.repeat, .autoreverse, .allowUserInteraction, .beginFromCurrentState],
                        animations: {
@@ -212,7 +210,6 @@ class WeatherDetailsViewController: UIViewController {
         
         //ease out animation TODO
         
-        
     }
     
     func getIconName(basedOnAbbreviation abbreviation: String)-> String{
@@ -238,7 +235,6 @@ class WeatherDetailsViewController: UIViewController {
         let finalValue = (value*(9/5)) + 32
         return Double(round(100*finalValue)/100)
     }
-    
     
     
     func getFormatDate(basedOn date : String) -> String{

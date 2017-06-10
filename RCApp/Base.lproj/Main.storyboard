@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cmg-0t-Skq">
-                                <rect key="frame" x="69" y="173" width="250" height="280"/>
+                                <rect key="frame" x="69" y="173" width="250" height="350"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFY-eE-rue">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="70"/>
@@ -79,6 +79,20 @@
                                         </state>
                                         <connections>
                                             <action selector="weatherButtonAction:" destination="hYy-tp-XvN" eventType="touchUpInside" id="bwg-di-Ywe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYe-PJ-UnT">
+                                        <rect key="frame" x="0.0" y="280" width="250" height="70"/>
+                                        <color key="backgroundColor" red="0.39439575683397143" green="0.65747767541477298" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="A4o-oc-siK"/>
+                                            <constraint firstAttribute="width" constant="250" id="pfK-zE-BCb"/>
+                                        </constraints>
+                                        <state key="normal" title="Rock Climbing Accesories">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="accessoriesButtonAction:" destination="hYy-tp-XvN" eventType="touchUpInside" id="Xup-BZ-d6m"/>
                                         </connections>
                                     </button>
                                 </subviews>
